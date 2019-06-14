@@ -7,21 +7,26 @@
     <title>Eksamen</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="CV.html">Om mig</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
-            <div class="dropdown-content">
-                <a href="portfolio.html">Titel sekvens</a>
-                <a href="portfolio.html">Stilartsite</a>
-                <a href="portfolio.html">Link 3</a>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Forside</a>
+            <a href="CV.html">Om mig</a>
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="titel.html">Titelsekvens</a>
+                    <a href="stilart.html">Stilartside</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </li>
-    </ul>
+        </div>
+    </header>
     <script src="script.js"></script>
 </body>
 

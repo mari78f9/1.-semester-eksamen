@@ -1,42 +1,39 @@
-img {
-    width: 100%;
-}
+/*MENU*/
 
-section {
-    max-width: 1200px;
-    margin: auto;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: -10px;
-    padding: 0;
+.navbar {
     overflow: hidden;
-    background-color: #145665;
+    background-color: #1b6876;
+    margin: -10px;
 }
 
-li {
+.navbar a {
     float: left;
-}
-
-li a,
-.dropbtn {
-    font-family: 'PT Sans', sans-serif;
-    display: inline-block;
+    font-size: 16px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    text-align: right;
+    font-family: 'PT Sans', sans-serif;
 }
 
-li a:hover,
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: dimgray;
-}
-
-li.dropdown {
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -49,6 +46,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
+    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -57,35 +55,9 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-#titelsekvens .titel {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-#titelsekvens .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#titelsekvens .col {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-@media only screen and (min-width: 800px) {
-    #titelsekvens .titel {
-        width: 50%;
-    }
 }
